@@ -1,0 +1,398 @@
+/* Global style */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --main-color: #1e1e2f;
+    --accent-color: #0077ff;
+    --light-bg: #f5f7fa;
+    --card-bg: rgba(255, 255, 255, 0.8);
+    --price-color: #ff4d4f;
+    --button-color: #109ba8;
+    --text-color: #222;
+}
+
+h1 {
+    font-size: 30px;
+    color: var(--main-color);
+}
+
+h2 {
+    font-size: 28px;
+    color: var(--text-color);
+}
+
+p {
+    font-size: 16px;
+    color: var(--text-color);
+}
+
+.sectionp {
+    padding: 80px;
+}
+
+.sectionm {
+    margin: 80px;
+}
+
+.normal {
+    padding: 11px 25px;
+    background-color: var(--button-color);
+    color: var(--light-bg);
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.5s ease;
+
+}
+
+ul li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    font-size: 20px;
+    color: var(--text-color);
+    font-weight: 500;
+}
+
+/* navbar start */
+#navbar {
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 80px;
+    background-color: rgb(252, 252, 252);
+    align-items: center;
+    border-bottom: 1px solid #ebebeb;
+}
+
+#navbar h1 {
+    color: var(--button-color);
+}
+
+#navbar ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#navbar ul li {
+    padding: 0 20px;
+}
+
+#navbar input {
+    background-color: #fff;
+    outline: none;
+    border: none;
+    padding: 10px 10px;
+    margin-right: 20px;
+    border-radius: 10px;
+    /* border-bottom-right-radius: 0;
+    border-top-right-radius: 0; */
+    border: 1px solid #d9e1ed;
+
+}
+
+#navbar #searchButton {
+    margin-left: -35px;
+    margin-right: 20px;
+
+}
+
+#navbar #card {
+    padding: 5px;
+    border-radius: 50%;
+    outline: none;
+    border: none;
+    color: var(--button-color);
+
+}
+
+#navbar #card a {
+    font-size: 25px;
+}
+
+#navbar div {
+    display: flex;
+    align-items: center;
+}
+
+/* navbar end */
+
+/* home page  starts*/
+
+/* hero section stars */
+#hero-section {
+    background-image: url("/img/heroSection/hero-section-one.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 20% 50%;
+    height: 95vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+#hero-section div {
+    width: 34%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+}
+
+#hero-section h1 {
+    color: var(--light-bg);
+    font-size: 38px;
+    padding: 20px 0;
+}
+
+#hero-section p {
+    color: rgb(230, 228, 228);
+    /* font-size: 38px; */
+    font-size: 24px;
+    padding: 10px 0;
+    font-weight: 500;
+    padding-bottom: 40px;
+}
+
+#hero-section button a {
+    color: #fff;
+}
+
+#hero-section .card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--text-color);
+    padding: 15px;
+    height: 200px;
+    width: 25%;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px #fff;
+}
+
+#hero-section .card span {
+    font-size: 60px;
+    color: #fff;
+
+}
+
+#hero-section .card p {
+    font-size: 18px;
+    line-height: 25px;
+}
+
+#hero-section .card .normal a {
+    font-size: 16px;
+}
+
+#hero-section .card .normal {
+    /* background-color: var(--text-color); */
+    /* border: 1px solid; */
+    border-radius: 50%;
+    padding: 10px;
+}
+
+/* hero section ends */
+
+
+/* features section starts */
+
+
+
+
+
+
+#features {
+    width: 100%;
+    height: auto;
+
+}
+
+#features.sectionp {
+    padding: 80px 0;
+}
+
+#features img {
+    object-fit: cover;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin: 0 20px;
+}
+
+/* features section ends */
+
+/* genral products starts */
+
+#genral-products {
+    width: 100%;
+
+}
+
+#genral-products .head {
+    text-align: center;
+    margin-bottom: 100px;
+}
+
+#genral-products .head h1 {
+    font-size: 38;
+    margin-bottom: 20px;
+    color: var(--main-color);
+}
+
+#genral-products .head p {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+#genral-products .cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
+}
+
+#genral-products .cards .card {
+    width: 23%;
+    height: 600px;
+    padding: 20px;
+    border-radius: 20px;
+    border: 1px solid #aeafb0;
+    box-shadow: 2px 2px 20px gray;
+    transition: 0.5s ease;
+    margin: 20px;
+}
+#genral-products .cards .card:hover{
+    transform: scale(1.03);
+    cursor: pointer;
+}
+
+#genral-products .cards .card img {
+    width: 100%;
+    height: 80%;
+}
+#genral-products .cards .span-card{
+    padding: 8px 0;
+  display: inline-block;
+}
+#genral-products .cards h1{
+    font-size: 20px;
+ padding-bottom: 8px;
+}
+#genral-products .cards .stars i{
+    color: #FFD700;
+    padding-bottom: 8px;
+}
+#genral-products .cards .pric-cart{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#genral-products .cards .pric-cart p{
+    font-size: 20px;
+    font-weight: 800;
+}
+#genral-products .cards .pric-cart span{
+    font-size: 20px;
+    font-weight: 800;
+}
+#genral-products .cards .pric-cart .normal{
+  border-radius: 50%;
+    padding: 8px;
+}
+#genral-products .cards .pric-cart .normal a{
+    color: #fff;
+    font-size: 16px;
+}
+
+/* genral products ends */
+
+/* home page  ends*/
+
+
+
+
+/* media quere */
+@media(max-width:799px) {
+
+
+    #hero-section .card {
+        display: none;
+    }
+
+    .sectionp {
+        padding: 40px;
+    }
+
+    #hero-section div {
+        width: 61%;
+
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media(max-width:477px) {
+    #hero-section {
+        height: 70vh;
+
+    }
+
+    #hero-section div {
+        width: 69%;
+    }
+
+    .sectionp {
+        padding: 10px;
+    }
+
+    #hero-section h1 {
+
+        font-size: 28px;
+        padding: 10px 0;
+    }
+
+    #hero-section p {
+
+        font-size: 18px;
+        padding: 10px 0;
+
+    }
+
+    a {
+        text-decoration: none;
+        font-size: 14px;
+        color: var(--text-color);
+        font-weight: 500;
+    }
+
+    #hero-section {
+
+        background-position: 34% 50%;
+
+    }
+}
