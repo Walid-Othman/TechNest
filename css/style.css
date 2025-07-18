@@ -131,7 +131,7 @@ a {
 
 /* hero section stars */
 #hero-section {
-    background-image: url("/img/heroSection/hero-section-one.jpg");
+    background-image: url("../img/heroSection/hero-section-one.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: 20% 50%;
