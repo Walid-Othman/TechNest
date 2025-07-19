@@ -8,6 +8,14 @@
     margin: 0;
     box-sizing: border-box;
 }
+/* body{
+    background-color: #1e1e2f;
+    color: #fff;
+} */
+
+.typed-cursor {
+    opacity: 0 !important;
+}
 
 :root {
     --main-color: #1e1e2f;
@@ -21,26 +29,27 @@
 
 h1 {
     font-size: 30px;
-    color: var(--main-color);
+
 }
 
 h2 {
     font-size: 28px;
-    color: var(--text-color);
+ 
 }
 
 p {
     font-size: 16px;
-    color: var(--text-color);
+  
 }
 
 .sectionp {
-    padding: 80px;
+    padding: 20px;
 }
 
 .sectionm {
     margin: 80px;
 }
+
 
 .normal {
     padding: 11px 25px;
@@ -134,8 +143,18 @@ a {
     height: 95px;
 }
 
-#navbar .bar{
-   display: none;
+#navbar .bar {
+    display: none;
+}
+#dark{
+    margin-left: 15px;
+    outline: none;
+    padding: 5px;
+    color: #fff;
+    border-radius: 50%;
+    font-size: 20px;
+    border: none;
+cursor: pointer;
 }
 
 
@@ -172,7 +191,7 @@ a {
 }
 
 #hero-section p {
-    color: rgb(230, 228, 228);
+    color: rgb(204, 204, 204);
     /* font-size: 38px; */
     font-size: 24px;
     padding: 10px 0;
@@ -267,24 +286,26 @@ a {
 #genral-products .head h1 {
     font-size: 38;
     margin-bottom: 20px;
-    color: var(--main-color);
+    /* color: var(--main-color); */
 }
 
 #genral-products .head p {
     font-size: 20px;
     margin-bottom: 20px;
+    color: gray;
 }
 
 #genral-products .cards {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     flex-wrap: wrap;
+
 
 }
 
 #genral-products .cards .card {
-    width: 23%;
+    width: 21%;
     height: 450px;
     padding: 20px;
     border-radius: 20px;
@@ -349,6 +370,155 @@ a {
 
 /* genral products ends */
 
+/* start offer section */
+#offer-section {
+    background-image: url("../img/heroSection/offer\ section\ img.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 100% 40%;
+    width: 100%;
+    height: 40vh;
+    text-align: center;
+    margin: 50px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+
+}
+
+#offer-section p {
+    color: #fff;
+    padding: 15px 0;
+}
+
+#offer-section h1 {
+    color: #fff;
+    padding-bottom: 15px;
+}
+
+/* end offer section */
+
+/* sign-section starts */
+#sign-section {
+    background-image: url('../img/heroSection/sin\ section.avif');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 20vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+#sign-section .div-one {
+    width: 50%;
+}
+
+#sign-section .div-tow {
+    width: 50%;
+}
+
+#sign-section h1 {
+    color: #fff;
+    margin: 15px 0;
+}
+
+#sign-section span {
+    color: #cfd1d3;
+}
+
+#sign-section h2 {
+    height: 30px;
+    color: #eea83f;
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+#sign-section .div-tow {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+
+}
+
+#sign-section input {
+    width: 60%;
+    padding: 15px 5px;
+    border-radius: 10px;
+    border-bottom-right-radius: 0%;
+    border-top-right-radius: 0%;
+    outline: none;
+    border: none;
+    font-size: 16px;
+}
+
+#sign-section button.normal {
+    padding: 17px 25px;
+    margin-left: -10px;
+}
+
+/* sign-section ends */
+/* footer starts */
+
+footer {
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    padding: 40px;
+    text-align: center;
+}
+
+footer h1 {
+    color: var(--button-color);
+    margin-bottom: 30px;
+}
+
+footer h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #aeafb0;
+}
+ footer p{
+    margin-bottom: 10px;
+  color: #adaaaa;
+ }
+ footer li {
+    padding-bottom: 20px;
+    color: #adaaaa;
+ }
+ footer li a {
+       color: #adaaaa;
+ }
+ footer .icons a {
+     color:var(--button-color);
+   margin-right: 15px;
+ }
+ .rights{
+    text-align: center;
+    padding-bottom: 10px;
+    font-size: 16px;
+     color: #adaaaa;
+     
+ }
+ #up{
+    padding: 8px;
+    border-radius: 50%;
+    outline: none;
+    border: none;
+    font-size: 16px;
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    display: none;
+    background-color: #eae5e5;
+    color: rgb(156, 153, 153);
+    box-shadow: 2px 2px 10px gray;
+    cursor: pointer;
+ }
+/* footer ends */
 /* home page  ends*/
 
 
@@ -361,15 +531,16 @@ a {
         padding: 10px 10px;
 
     }
-  #navbar .bar{
-    font-weight: 900;
-    font-size: 30px;
-    outline: none;
-    border: none;
-   color: var(--button-color);
-   padding: 5px;
-   display: block;
-}
+
+    #navbar .bar {
+        font-weight: 900;
+        font-size: 30px;
+        outline: none;
+        border: none;
+        color: var(--button-color);
+        padding: 5px;
+        display: block;
+    }
 
     .setnav {
         display: flex;
@@ -391,7 +562,50 @@ a {
     .setnav .normal {
         margin-top: 0px;
     }
+
+    #hero-section {
+        display: flex;
+        flex-direction: column;
+        gap: 100px;
+        justify-content: center;
+        align-items: flex-start;
+    }
+
+    #hero-section div {
+        width: 60%;
+    }
+
+    #hero-section .card {
+        width: 42%;
+    }
+
+    #hero-section h1 {
+        color: var(--light-bg);
+        font-size: 47px;
+        padding: 20px 0;
+    }
+
+    .sectionp {
+        padding: 13px;
+    }
+
+    #genral-products .cards {
+
+        justify-content: space-around;
+
+    }
+
+    #offer-section {
+        align-items: center;
+        justify-content: end;
+    }
+
+    #sign-section h2 {
+        margin-bottom: 30px;
+    }
+
 }
+
 
 @media(max-width:799px) {
 
@@ -424,7 +638,11 @@ a {
 
 
 
-
+@media(max-width:662px) {
+    #genral-products .cards .card {
+        width: 70%;
+    }
+}
 
 
 
@@ -492,4 +710,46 @@ a {
     }
 
     /* genral productes ends */
+
+    /* offer section starts */
+    #offer-section .normal {
+        margin-top: -3px;
+        margin-bottom: 10px;
+    }
+
+    /* offer section ends */
+
+    /* sign section starts */
+
+    #sign-section {
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        flex-wrap: nowrap;
+        height: 34vh;
+    }
+
+    #sign-section .div-one {
+        width: 100%;
+        text-align: center;
+    }
+
+    #sign-section .div-one h1 {
+        font-size: 24px;
+
+    }
+
+    #sign-section .div-tow {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 10px;
+    }
+
+    #sign-section .div-tow .normal {
+        margin-top: 0px;
+    }
+
+    /* sign section ends */
 }
