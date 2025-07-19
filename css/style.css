@@ -469,6 +469,7 @@ footer {
     justify-content: space-between;
     padding: 40px;
     text-align: center;
+    flex-wrap: wrap;
 }
 
 footer h1 {
@@ -495,6 +496,7 @@ footer h2 {
  footer .icons a {
      color:var(--button-color);
    margin-right: 15px;
+   font-size: 25px;
  }
  .rights{
     text-align: center;
