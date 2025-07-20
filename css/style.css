@@ -608,6 +608,9 @@ color: #dfdfda;
     width: 40%;
     height: 80%;
 }
+
+
+
 #about-section .data h1{
     margin-bottom: 20px;
     color: #fff;
@@ -725,7 +728,18 @@ margin-right: 20px;
         margin: 15px 0;
 
 }
-/* contact bag ends */
+
+#hero-section.hero-About-section div {
+    width: 70%;
+    margin: auto;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+}
+
+
+/* contact pag ends */
 
 
 
