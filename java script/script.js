@@ -1,29 +1,6 @@
 
 
-const typed = new Typed('#typed', {
-  strings: ['Discover top brands latest models and unbeatab deals all in one place....'],
-  typeSpeed: 60,
-  backSpeed: 30,
-  backDelay: 2000,
-  startDelay: 500,
-  loop: Infinity
-});
-const typed_tow = new Typed('#discrabtion-one', {
-  strings: ['smart gadgets accessories and tech essentials.......'],
-  typeSpeed: 60,
-  backSpeed: 30,
-  backDelay: 2000,
-  startDelay: 500,
-  loop: Infinity
-});
-const typed_three = new Typed('#get-email', {
-  strings: ['Get E-mail updates about our latest shop.......'],
-  typeSpeed: 60,
-  backSpeed: 30,
-  backDelay: 2000,
-  startDelay: 500,
-  loop: Infinity
-});
+
 
 
 
@@ -62,26 +39,24 @@ function openNavbar() {
   }
 }
 
-openNavbar()
+
 
 
 
 // function for dark mood
 function dark() {
   let body = document.body
-  let dark = document.getElementById('dark')
+  let dark = document.querySelectorAll('.dark')
   if (dark) {
-    // if (!localStorage.getItem('mood')) {
-    //   localStorage.setItem('mood', 'dark')
-    // }
+  dark.forEach((darko,index)=>{
+
     let mood
-    dark.addEventListener('click', () => {
+    darko.addEventListener('click', () => {
       if (localStorage.getItem('mood') === "dark") {
         body.style.backgroundColor = '#1e1e2f'
         body.style.color = '#fff'
         mood = 'light'
-        dark.textContent = "☀️"
-        dark.backgroundColor = '#1e1e2f'
+        darko.textContent = "☀️"
         localStorage.setItem('mood', mood)
         console.log("it's dark")
       }
@@ -89,8 +64,7 @@ function dark() {
         body.style.backgroundColor = '#fff'
         body.style.color = 'black'
         mood = 'dark'
-        dark.textContent = "🌙"
-        dark.backgroundColor = '#fff'
+        darko.textContent = "🌙"
         localStorage.setItem('mood', mood)
         console.log("it's light")
       }
@@ -98,19 +72,16 @@ function dark() {
     if (localStorage.getItem('mood') === 'light') {
       body.style.backgroundColor = '#1e1e2f'
       body.style.color = '#fff'
-      dark.textContent = "☀️"
-      dark.backgroundColor = '#1e1e2f'
+      dark.forEach(btn=>{ btn.textContent = "☀️"})
     } else {
       body.style.backgroundColor = '#fff'
       body.style.color = 'black'
-      dark.textContent = "🌙"
-      dark.backgroundColor = '#fff'
-
+   dark.forEach(btn=>{ btn.textContent = "🌙"})
     }
-
+  })
   }
 }
-dark()
+
 
 
 // function for up button 
@@ -131,7 +102,64 @@ function up() {
         behavior:'smooth'
       })
     })
+   const nav = document.getElementById('navbar');
+  nav.style.top = '0';
+  nav.style.display = 'flex';
   }
 
 }
+
+
+
+document.addEventListener('DOMContentLoaded',()=>{
+  if(document.querySelector('#typed')){
+const typed = new Typed('#typed', {
+  strings: ['Discover top brands latest models and unbeatab deals all in one place....'],
+  typeSpeed: 60,
+  backSpeed: 30,
+  backDelay: 2000,
+  startDelay: 500,
+  loop: Infinity
+})};
+
+if(document.querySelector('#discrabtion-one')){
+const typed_tow = new Typed('#discrabtion-one', {
+  strings: ['smart gadgets accessories and tech essentials.......'],
+  typeSpeed: 60,
+  backSpeed: 30,
+  backDelay: 2000,
+  startDelay: 500,
+  loop: Infinity
+})};
+
+if(document.querySelector('#get-email')){
+const typed_three = new Typed('#get-email', {
+  strings: ['Get E-mail updates about our latest shop.......'],
+  typeSpeed: 60,
+  backSpeed: 30,
+  backDelay: 2000,
+  startDelay: 500,
+  loop: Infinity
+})};
+if(document.querySelector('#typed-about')){
+const typed_four = new Typed('#typed-about', {
+  strings: ['Here in this page you are going to know more about us.......'],
+  typeSpeed: 60,
+  backSpeed: 30,
+  backDelay: 2000,
+  startDelay: 500,
+  loop: Infinity
+})};
+if(document.querySelector('#typed-contact')){
+const typed_four = new Typed('#typed-contact', {
+  strings: ['Call us anytime we are working 24/7 for you .......'],
+  typeSpeed: 60,
+  backSpeed: 30,
+  backDelay: 2000,
+  startDelay: 500,
+  loop: Infinity
+})};
+openNavbar()
+dark()
 up()
+})
